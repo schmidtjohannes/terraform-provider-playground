@@ -2,12 +2,13 @@ package playground
 
 import (
 	"context"
-
+	"strconv"
+	"time"
         "github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
-func Provider() terraform.ResourceProvider {
+func Provider() *schema.Provider {
 	return &schema.Provider{
 		DataSourcesMap: map[string]*schema.Resource{
 			"playground_id": dataSourcePlaygroundId(),
