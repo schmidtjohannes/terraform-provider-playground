@@ -19,7 +19,7 @@ func main() {
 
 	if debugMode {
 		// TODO: update this string with the full name of your provider as used in your configs
-		err := plugin.Debug(context.Background(), "registry.terraform.io/schmidtjohannes/playground", opts)
+		err := plugin.Debug(context.Background(), "registry.terraform.io/schmidtjohannes.com/terraform-provider-playground", opts)
 		if err != nil {
 			log.Fatal(err.Error())
 		}
